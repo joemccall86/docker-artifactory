@@ -9,7 +9,7 @@ FROM ubuntu
 MAINTAINER Joe McCall "joemcc@ll86.net"
 
 # This is needed for openjdk-7-jre-headless. Universe is for community-maintained software
-RUN echo "deb http://archive.ubuntu.com/ubuntu precise main universe" > /etc/apt/sources.list
+RUN echo "deb http://archive.ubuntu.com/ubuntu precise main universe" >> /etc/apt/sources.list
 RUN apt-get update
 
 # Unzip is required untill ADD supports zip files
